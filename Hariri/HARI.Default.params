@@ -1,0 +1,4 @@
+run P
+volume_test False
+practice False
+instruction_schedule FC_instruct_scheduleP.csv

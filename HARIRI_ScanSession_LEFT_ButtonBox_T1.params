@@ -1,0 +1,14 @@
+left y
+right b
+select g
+scan True
+record_video False
+signal_parallel False
+auto_advance True
+screen_x 1024
+screen_y 768
+output_dir 'C:/StimToolData/functional_session/'
+allow_instructions_back False
+instruction_volume 0.5
+redirect_output True
+session_id T1
