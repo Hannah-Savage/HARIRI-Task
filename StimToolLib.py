@@ -263,7 +263,7 @@ def do_one_slide(slide, directory, g):
         if len(slide) == 4: #optional volume parameter
             s = sound.Sound(value = os.path.join(directory, slide[1]), volume=float(slide[3]))
         else:
-            s = sound.Sound(value = os.path.join(directory, slide[1]), volume=g.session_params['instruction_volume'])
+            s = sound.Sound(value = os.path.join(directory, slide[1]))# COMMENT OUT TO AVOID VOLUME RELATED ERROR , volume=g.session_params['instruction_volume'])
     advance_time = float(slide[2])
     #if it's -1, don't advance, if it's 0, advance at the end of the sound, if it's positive, advance after that amount of time
     wait_z = False
