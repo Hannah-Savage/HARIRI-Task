@@ -57,8 +57,8 @@ def general_setup(g):
     #initialize the window, main text stim, and clock
     thisMon = monitors.Monitor('', width=g.session_params['monitor_width_cm'], distance=g.session_params['monitor_distance_cm'])
     thisMon.setSizePix([g.session_params['monitor_width_pix'], g.session_params['monitor_height_pix']])
-    g.win = visual.Window(fullscr=False, screen=1,color=(-1,-1,-1), waitBlanking=True, colorSpace='rgb',winType='pyglet', allowGUI=False, size=(g.session_params['screen_x'], g.session_params['screen_y']), monitor=thisMon) 
-    g.msg = visual.TextStim(g.win,text="",units='pix',pos=[0,0],color=[1,1,1],height=30,wrapWidth=int(1600))
+    g.win = visual.Window(fullscr=False, screen=1,color=(1,1,1), waitBlanking=True, colorSpace='rgb',winType='pyglet', allowGUI=False, size=(g.session_params['screen_x'], g.session_params['screen_y']), monitor=thisMon) #HS made screen white: originally (-1,-1,-1)
+    g.msg = visual.TextStim(g.win,text="",units='pix',pos=[0,0],color=[-1,-1,-1],height=30,wrapWidth=int(1600))#HS made text black: originally (1,1,1)
     g.mouse = event.Mouse(visible=False) #hide the mouse--prevents loss of focus, also leave the mouse object in g so that it can be shown if the task requires it
     core.wait(1)
     g.clock = core.Clock()
@@ -257,13 +257,13 @@ def run_instructions(instruct_schedule_file, g):
 
 def do_one_slide(slide, directory, g):
     image = visual.ImageStim(g.win, image=os.path.join(directory, slide[0]))
-    if slide[1] == 'None':
+    if slide[1] == 'None': #HS: removed the audio files that go along with introduction --> make sure that all .schedule files have 'None' in 2nd audio column
         s = None
     else:
         if len(slide) == 4: #optional volume parameter
             s = sound.Sound(value = os.path.join(directory, slide[1]), volume=float(slide[3]))
         else:
-            s = sound.Sound(value = os.path.join(directory, slide[1]))# COMMENT OUT TO AVOID VOLUME RELATED ERROR , volume=g.session_params['instruction_volume'])
+            s = sound.Sound(value = os.path.join(directory, slide[1]), volume=g.session_params['instruction_volume'])
     advance_time = float(slide[2])
     #if it's -1, don't advance, if it's 0, advance at the end of the sound, if it's positive, advance after that amount of time
     wait_z = False
