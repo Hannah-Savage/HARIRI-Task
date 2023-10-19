@@ -195,11 +195,13 @@ def check_for_esc():
         raise QuitException()
         
 def wait_scan_start(win):
-    #show "In Preparation" in msg in win, wait for a 'z' after the scanner is prepped, then wait for a 't' to start the task
+    #HS: edit to show 'Loading..." to reduce confusion of partiicpants. Experimenters must know to press 'z' after the scanner is prepped, then wait for a 't' (or press on keybaord for manual testing) to start the task
+    #ORIGINALLY: show "In Preparation" in msg in win, wait for a 'z' after the scanner is prepped, then wait for a 't' to start the task
     msg = visual.TextStim(win,text="",units='pix',pos=[0,0],color=[win.color[0] * -1, win.color[1] * -1, win.color[2] * -1] ,height=30,wrapWidth=int(1600)) #text color should be opposite of window color
-    msg.setText('In Preparation')
+    msg.setText('Loading...')
     msg2 = visual.TextStim(win,text="",units='pix',pos=[0,-200],color=[win.color[0] * -1, win.color[1] * -1, win.color[2] * -1] ,height=20,wrapWidth=int(1600)) 
-    msg2.setText("(Press z after scanner prep)")
+    #msg2.setText("(Press z after scanner prep)") #HS: Removed text to reduce confusion for participants - can turn it back on for testing
+    msg2.setText("") 
     msg.draw()
     msg2.draw()
     win.flip()
@@ -208,7 +210,8 @@ def wait_scan_start(win):
         raise QuitException()
     #Wait for scanner pulse
     msg.setText('Task will begin soon')
-    msg2.setText('(Waiting for a t to start)')
+    #msg2.setText('(Waiting for a t to start)') #HS: Removed text to reduce confusion for participants - can turn it back on for testing
+    msg2.setText('')
     msg.draw()
     msg2.draw()
     win.flip()
