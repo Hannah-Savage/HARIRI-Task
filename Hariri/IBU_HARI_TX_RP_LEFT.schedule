@@ -3,8 +3,8 @@ TrialTypes (0->fixation; 1->faces instruct; 2->shapes instruct; 3->faces match; 
 2,media/mform.bmp media/blank.bmp media/blank.bmp,2,0
 4,media/circle4.bmp media/horizontal1.bmp media/circle3.bmp,5,2
 4,media/horizontal3.bmp media/horizontal1.bmp media/circle2.bmp,5,1
-4,media/horizontal4.bmp media/horizontal3.bmp media/vertical2.bmp,5,2
-4,media/circle2.bmp media/horizontal3.bmp media/circle4.bmp,5,2
+4,media/horizontal4.bmp media/vertical2.bmp media/horizontal3.bmp,5,2
+4,media/circle2.bmp media/horizontal1.bmp media/circle4.bmp,5,2
 4,media/horizontal2.bmp media/horizontal3.bmp media/vertical1.bmp,5,1
 4,media/circle1.bmp media/vertical4.bmp media/circle3.bmp,5,2
 0,media/Cross.bmp media/blank.bmp media/blank.bmp,2,0
