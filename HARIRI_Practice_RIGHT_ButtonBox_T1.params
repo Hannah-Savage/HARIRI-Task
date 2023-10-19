@@ -1,12 +1,12 @@
+left '1'
+right '2'
+select '3'
 record_video False
 signal_parallel False
 auto_advance True
 screen_x 2560
 screen_y 1440
 output_dir 'C:/Users/hansav/Desktop/HARIRI-Task_output/'
-left '1'
-right '2'
-select '3'
 instruction_volume 0.4
 redirect_output True
 session_id T1
