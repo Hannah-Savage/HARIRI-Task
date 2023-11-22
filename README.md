@@ -1,4 +1,3 @@
-# HARIRI TASK
+### Go to [wiki](https://github.com/Hannah-Savage/Standard_EFMT/wiki/0.-Standard-Emotional-Face-Matching-Task-(EFMT)-wiki) for installation and running the Standard version of the Emotional Face Matching Task (EFMT).
 
-
-## Go to [wiki](https://github.com/laureate-institute-for-brain-research/HARIRI-Task/wiki) for installation and running Hariri task 
+### You can contribute to the Discussion Board [here](https://github.com/Hannah-Savage/Standard_EFMT/discussions)
