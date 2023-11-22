@@ -342,7 +342,10 @@ def read_trial_structure(schedule_file, win, msg):
         s = i[1].split()
         s1 = []
         for j in s:
-            s1.append(visual.ImageStim(win, image=os.path.join(directory, j), units='pix')) #load images into memory
+            if i[0] == '3':
+                s1.append(visual.ImageStim(win, image=os.path.join(directory, j), size = (233,300), units='pix')) #load images into memory #HS: Edit to make the NimStim images the same size as the other stimuli
+            else: 
+                s1.append(visual.ImageStim(win, image=os.path.join(directory, j), units='pix')) #load images into memory #HS: Leave other stimuli as their original size
         stimuli.append(s1)
         
         d = i[2].split()

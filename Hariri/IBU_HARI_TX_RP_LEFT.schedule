@@ -9,10 +9,10 @@ TrialTypes (0->fixation; 1->faces instruct; 2->shapes instruct; 3->faces match; 
 4,media/circle1.bmp media/vertical4.bmp media/circle3.bmp,5,2
 0,media/Cross.bmp media/blank.bmp media/blank.bmp,2,0
 1,media/memotion.bmp media/blank.bmp media/blank.bmp,2,0
-3,media/anger7jf.bmp media/happy5jm.bmp media/anger6jm.bmp,5,2
-3,media/anger1cm.bmp media/happy8jf.bmp media/anger2cm.bmp,5,2
-3,media/anger5jm.bmp media/anger4cf.bmp media/happy4cf.bmp,5,1
-3,media/anger6jm.bmp media/fear6jm.bmp media/anger1cm.bmp,5,2
-3,media/anger2cm.bmp media/anger8jf.bmp media/fear3cf.bmp,5,1
-3,media/anger4cf.bmp media/anger5jm.bmp media/fear2cm.bmp,5,1
+3,media/22M_FE_C.BMP media/30M_AN_C.BMP media/36M_FE_C.BMP,5,2
+3,media/11F_AN_C.BMP media/01F_FE_C.BMP media/07F_AN_C.BMP,5,2
+3,media/18F_FE_C.BMP media/11F_FE_C.BMP media/16F_AN_C.BMP,5,1
+3,media/36M_AN_C.BMP media/45M_FE_C.BMP media/30M_AN_C.BMP,5,2
+3,media/01F_FE_C.BMP media/12F_FE_C.BMP media/02F_AN_C.BMP,5,1
+3,media/39M_AN_C.BMP media/36M_AN_C.BMP media/28M_FE_C.BMP,5,1
 0,media/Cross.bmp media/blank.bmp media/blank.bmp,4,0

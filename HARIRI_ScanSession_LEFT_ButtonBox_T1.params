@@ -1,13 +1,13 @@
-left y
-right b
-select g
+left '1' #y buttonbox --> number for keyboard testing
+right '2' #b buttonbox --> number for keyboard testing
+select '3' #g buttonbox --> number for keyboard testing
 scan True
 record_video False
 signal_parallel False
 auto_advance True
-screen_x 1024
-screen_y 768
-output_dir 'C:/StimToolData/functional_session/'
+screen_x 2560
+screen_y 1440
+output_dir 'C:/Users/hansav/Desktop/HARIRI-Task_output/'
 allow_instructions_back False
 instruction_volume 0.5
 redirect_output True
